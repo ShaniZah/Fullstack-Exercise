@@ -5,11 +5,11 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { User, UserService } from '../services/user.service';
-
+import { ReportComponent } from '../report/report.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatExpansionModule],
+  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatExpansionModule, ReportComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
