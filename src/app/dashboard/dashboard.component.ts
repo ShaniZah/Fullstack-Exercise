@@ -24,7 +24,7 @@ export class DashboardComponent implements OnInit {
         user.bmi = this.calculateBMI(user.Height, user.Weight);
         const { avg, states } = this.analyzeHeartRate(user.HeartRate);
         user.avgHeartRate = avg;
-        user.heartRateStatuses = states;
+        user.heartRateStatuses = this.extractFirstMinuteOfStates(states);
         return user;
       });
     });
@@ -51,10 +51,25 @@ export class DashboardComponent implements OnInit {
       states.push({ minute: i + 1, state });
     });
 
-    const avg = +(
+    const average = +(
       samples.reduce((sum, curr) => sum + curr, 0) / samples.length
     ).toFixed(2);
 
-    return { avg, states };
+    return { avg: average, states };
   }
+
+  extractFirstMinuteOfStates(states: { minute: number; state: string }[]): { minute: number; state: string }[] {
+    const firstEntries: { minute: number; state: string }[] = [];
+    let lastState: string | null = null;
+
+    for (const entry of states) {
+      if (entry.state !== lastState) {
+        firstEntries.push(entry);
+        lastState = entry.state;
+      }
+    }
+
+    return firstEntries;
+  }
+
 }

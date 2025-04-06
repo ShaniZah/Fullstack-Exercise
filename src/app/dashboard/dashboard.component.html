@@ -2,24 +2,23 @@
     <span>Dashboard</span>
     <span class="spacer"></span>
     <button mat-button (click)="logout()">Logout</button>
-  </mat-toolbar>
-  
-  <mat-accordion *ngIf="users.length">
+</mat-toolbar>
+
+<mat-accordion *ngIf="users.length">
     <mat-expansion-panel *ngFor="let user of users">
-      <mat-expansion-panel-header>
-        <mat-panel-title>{{ user.FirstName }} {{ user.LastName }}</mat-panel-title>
-        <mat-panel-description>ID: {{ user.ID }} | Age: {{ user.Age }}</mat-panel-description>
-      </mat-expansion-panel-header>
-      <div>
-        <p><b>Height:</b> {{ user.Height }} cm</p>
-        <p><b>Weight:</b> {{ user.Weight }} kg</p>
-        <p><b>BMI:</b> {{ user.bmi }}</p>
-        <p><b>Heart Rate Info:</b></p>
-        <ul>
-          <li *ngFor="let status of user.heartRateStatuses">Minute {{ status.minute }} - {{ status.state }}</li>
-        </ul>
-        <p><b>Average Heart Rate:</b> {{ user.avgHeartRate }}</p>
-      </div>
+        <mat-expansion-panel-header>
+            <mat-panel-title>{{ user.FirstName }} {{ user.LastName }}</mat-panel-title>
+            <mat-panel-description>ID: {{ user.ID }} | Age: {{ user.Age }}</mat-panel-description>
+        </mat-expansion-panel-header>
+        <div>
+            <p><b>Height:</b> {{ user.Height }} cm</p>
+            <p><b>Weight:</b> {{ user.Weight }} kg</p>
+            <p><b>BMI:</b> {{ user.bmi }}</p>
+            <p><b>Heart Rate Info:</b></p>
+            <ul>
+                <li *ngFor="let status of user.heartRateStatuses">Minute {{ status.minute }} - {{ status.state }}</li>
+            </ul>
+            <p><b>Average Heart Rate:</b> {{ user.avgHeartRate }}</p>
+        </div>
     </mat-expansion-panel>
-  </mat-accordion>
-  
+</mat-accordion>

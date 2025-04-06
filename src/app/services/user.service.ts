@@ -21,7 +21,7 @@ export interface User {
 
 export class UserService {
   private apiUrl = 'https://people-1a8f.restdb.io/rest/test-db';
-  private apiKey = '13fb233da679d57d63f5b297c46474d711881';
+  private apiKey = '67f2601f7be75e1adbbab34f';
 
   constructor(private http: HttpClient) {}
 
