@@ -21,8 +21,8 @@ export class DashboardComponent implements OnInit {
   ngOnInit(): void {
     this.userService.getUsers().subscribe(data => {
       this.users = data.map(user => {
-        user.bmi = this.calculateBMI(user.Height, user.Weight);
-        const { avg, states } = this.analyzeHeartRate(user.HeartRate);
+        user.bmi = this.calculateBMI(user.height, user.weight);
+        const { avg, states } = this.analyzeHeartRate(user.heartRate);
         user.avgHeartRate = avg;
         user.heartRateStatuses = this.extractFirstMinuteOfStates(states);
         return user;

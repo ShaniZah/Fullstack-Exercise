@@ -1,0 +1,169 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataController.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\DataController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\DataController.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\DataController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\DataController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:00:26.297Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "IDatabaseService.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\IDatabaseService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\IDatabaseService.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\IDatabaseService.cs",
+              "RelativeToolTip": "Backend\\Services\\IDatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:56:41.739Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseService.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "Backend\\Services\\DatabaseService.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "Backend\\Services\\DatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:53:47.03Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Person.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "Backend\\Models\\Person.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Models\\Person.cs",
+              "RelativeToolTip": "Backend\\Models\\Person.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:37:45.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "Backend\\WeatherForecast.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\WeatherForecast.cs",
+              "RelativeToolTip": "Backend\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:24:33.66Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Backend\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T20:30:09.634Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\appsettings.json",
+              "RelativeDocumentMoniker": "Backend\\appsettings.json",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\appsettings.json",
+              "RelativeToolTip": "Backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-06T20:29:36.906Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Backend\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwAoAAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:18:12.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Program.cs",
+              "RelativeDocumentMoniker": "Backend\\Program.cs",
+              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Program.cs",
+              "RelativeToolTip": "Backend\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T20:17:27.35Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

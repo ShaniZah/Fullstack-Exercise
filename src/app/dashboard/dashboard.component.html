@@ -7,12 +7,12 @@
 <mat-accordion *ngIf="users.length">
     <mat-expansion-panel *ngFor="let user of users">
         <mat-expansion-panel-header>
-            <mat-panel-title>{{ user.FirstName }} {{ user.LastName }}</mat-panel-title>
-            <mat-panel-description>ID: {{ user.ID }} | Age: {{ user.Age }}</mat-panel-description>
+            <mat-panel-title>{{ user.firstName }} {{ user.lastName }}</mat-panel-title>
+            <mat-panel-description>ID: {{ user.id }} | Age: {{ user.age }}</mat-panel-description>
         </mat-expansion-panel-header>
         <div>
-            <p><b>Height:</b> {{ user.Height }} cm</p>
-            <p><b>Weight:</b> {{ user.Weight }} kg</p>
+            <p><b>Height:</b> {{ user.height }} cm</p>
+            <p><b>Weight:</b> {{ user.weight }} kg</p>
             <p><b>BMI:</b> {{ user.bmi }}</p>
             <p><b>Heart Rate Info:</b></p>
             <ul>
