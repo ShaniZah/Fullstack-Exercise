@@ -6,10 +6,11 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { Observable } from 'rxjs';
 import { User, UserService } from '../services/user.service';
 import { ReportComponent } from '../report/report.component';
+import { UploadComponent } from "../upload/upload.component";
 
 @Component({
   selector: 'app-dashboard',
-  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatExpansionModule, ReportComponent],
+  imports: [CommonModule, MatToolbarModule, MatButtonModule, MatExpansionModule, ReportComponent, UploadComponent],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss'
 })
