@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
-import { UploadService } from '../services/upload.service';
+import { FileService } from '../services/file.service';
 
 @Component({
   selector: 'app-upload',
@@ -19,7 +19,7 @@ export class UploadComponent {
   uploadResult: any = null;
   error = '';
 
-  constructor(private uploadService: UploadService) {}
+  constructor(private filesService: FileService) {}
 
   onFileSelected(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -42,7 +42,7 @@ export class UploadComponent {
     this.uploadResult = null;
     this.error = '';
 
-    this.uploadService.uploadFile(this.selectedFile).subscribe({
+    this.filesService.uploadFile(this.selectedFile).subscribe({
       
       error: (err) => {
         this.error = 'Upload failed: ' + err.message;

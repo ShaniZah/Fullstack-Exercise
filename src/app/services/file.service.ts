@@ -5,7 +5,7 @@ import { catchError, throwError } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class UploadService {
+export class FileService {
   private URL = 'https://localhost:7200';
   constructor(private http: HttpClient) {}
 

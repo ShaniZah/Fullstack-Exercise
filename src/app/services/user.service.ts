@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable, tap } from 'rxjs';
+import { environment } from '../../environments/environment.development';
+import { tokenGetter } from '../app.config';
 
 export interface User {
   id: string;
@@ -19,14 +21,9 @@ export interface User {
   providedIn: 'root',
 })
 export class UserService {
-  // private apiUrl = 'https://people-1a8f.restdb.io/rest/test-db';
-  // private apiKey = '67f2601f7be75e1adbbab34f';
-
-  private URL = 'https://localhost:7200/api';
-
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(`${this.URL}/data/GetAll`).pipe(tap(console.log)); // what is tap?
+    return this.http.get<User[]>(`${environment.url}/data/GetAll`);
   }
 }

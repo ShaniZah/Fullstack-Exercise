@@ -1,6 +1,7 @@
 using Backend.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Text.Json;
+using System.Text.RegularExpressions;
 
 namespace Backend.Controllers
 {
@@ -12,53 +13,97 @@ namespace Backend.Controllers
 
     public FileUploadController(IWebHostEnvironment env)
     {
-      _env = env;
+      _env = env; // do i need?
     }
 
 
-    [HttpPost("UploadFile")]
+    [HttpPost("Upload")]
     public async Task<IActionResult> FileUpload([FromForm] IFormFile file)
     {
-      if(file == null || file.Length == 0){
-         return BadRequest("No file provided.");
+      if (file == null || file.Length == 0)
+      {
+        return BadRequest("empty file");
 
       }
-      if (!file.FileName.EndsWith(".csv", StringComparison.OrdinalIgnoreCase))
-        return BadRequest("Only CSV files are allowed.");
+      if (!file.FileName.EndsWith(".csv")) // case sensitve?, StringComparison.OrdinalIgnoreCase
+        return BadRequest("only CSV files allowed");
 
       try
       {
-        var uploadsFolderDirectory = Path.Combine(_env.ContentRootPath, "uploads");
-        Directory.CreateDirectory(uploadsFolderDirectory);
-        var csvPath = Path.Combine(uploadsFolderDirectory, file.FileName);
-        var fileStream = new FileStream(csvPath, FileMode.Create);
-        await file.CopyToAsync(fileStream);
-
-        // Read CSV lines
-        var lines = await System.IO.File.ReadAllLinesAsync(csvPath);
-    /*    if (lines.Length < 2)
-          return BadRequest("CSV file must contain header and at least one data row.");*/
-
-        var headers = lines[0].Split(',');
-        var result = new List<Dictionary<string, string>>();
-
-        foreach (var line in lines.Skip(1))
+        var uploadsFolderDirectory = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+        if (!Directory.Exists(uploadsFolderDirectory))
         {
-          var values = line.Split(',');
-          var row = new Dictionary<string, string>();
+          Directory.CreateDirectory(uploadsFolderDirectory);
+        }
 
-          for (int i = 0; i < headers.Length && i < values.Length; i++)
+        var filePath = Path.Combine(uploadsFolderDirectory, file.FileName);
+
+
+        // Save the original CSV
+        // this is a c#8.0 feature, disposes of the stream when exiting the scope 
+        using (var stream = new FileStream(filePath, FileMode.Create))
+        {
+          await file.CopyToAsync(stream);
+        }
+
+        // parse to json
+        var jsonData = new List<Dictionary<string, string>>();
+        var content = await System.IO.File.ReadAllTextAsync(filePath);
+
+        // Break into lines
+        var lines = content.Split(new[] { "\r\n", "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
+
+        string[]? headers = null;
+
+        foreach (var rawLine in lines)
+        {
+          var line = rawLine.Trim();
+
+          if (string.IsNullOrWhiteSpace(line)) continue;
+
+          // Skip lines starting with '#' that are NOT headers
+          if (line.StartsWith("#"))
           {
-            row[headers[i]] = values[i];
+            // If line starts with '#' and contains tabs or multiple columns, we assume it's the header
+            var candidate = line.Substring(1).Trim();
+            if (headers == null && candidate.Contains("\t") || candidate.Contains(','))
+            {
+              headers = candidate.Split(new[] { '\t', ',' });
+            }
+            continue;
           }
 
-          result.Add(row);
-        }
-        var jsonPath = Path.Combine(uploadsFolderDirectory, Path.GetFileNameWithoutExtension(file.FileName) + ".json");
-        var jsonString = JsonSerializer.Serialize(result, new JsonSerializerOptions { WriteIndented = true });
-        await System.IO.File.WriteAllTextAsync(jsonPath, jsonString);
+          // If we haven’t set headers yet, this line must be the real header row
+          if (headers == null)
+          {
+            headers = line.Split(new[] { '\t', ',' });
+            continue;
+          }
 
-        return Ok(result);
+          // Process data row
+          var values = line.Split(new[] { '\t', ',' });
+
+          var dict = new Dictionary<string, string>();
+          for (int i = 0; i < headers.Length && i < values.Length; i++)
+          {
+            dict[headers[i].Trim()] = values[i].Trim();
+          }
+
+          jsonData.Add(dict);
+        }
+
+        // Save JSON
+        var jsonFilePath = Path.Combine(
+            Path.GetDirectoryName(filePath),
+            Path.GetFileNameWithoutExtension(filePath) + ".json"
+        );
+
+        await System.IO.File.WriteAllTextAsync(
+            jsonFilePath,
+            JsonSerializer.Serialize(jsonData, new JsonSerializerOptions { WriteIndented = true })
+        );
+
+        return Ok(new { message = "File processed and saved", path = jsonFilePath });
 
       }
       catch (Exception ex)

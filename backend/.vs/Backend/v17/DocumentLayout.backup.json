@@ -1,41 +1,53 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\",
+  "WorkspaceRootPath": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\datacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\models\\loginrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\databaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\services\\idatabaseservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\models\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|d:\\ultimate folder go\\programming\\fullstack-exercise\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|c:\\users\\shani\\desktop\\college\\web dev projext\\fullsatckexercise\\backend\\backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{468A5F85-8A76-4001-B2AE-177852F120D1}|Backend\\Backend.csproj|solutionrelative:backend\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     }
   ],
@@ -46,120 +58,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FileUploadController.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\FileUploadController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\FileUploadController.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "backend\\Controllers\\FileUploadController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T18:08:50.987Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DataController.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\DataController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\DataController.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\DataController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\DataController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "backend\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAYwA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T21:00:26.297Z"
+              "WhenOpened": "2025-04-07T16:53:10.972Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DataController.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\DataController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\DataController.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\DataController.cs",
+              "RelativeToolTip": "backend\\Controllers\\DataController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-06T21:00:26.297Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "IDatabaseService.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\IDatabaseService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\IDatabaseService.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\IDatabaseService.cs",
-              "RelativeToolTip": "Backend\\Services\\IDatabaseService.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Services\\IDatabaseService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\IDatabaseService.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Services\\IDatabaseService.cs",
+              "RelativeToolTip": "backend\\Services\\IDatabaseService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T20:56:41.739Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "DatabaseService.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\DatabaseService.cs",
-              "RelativeDocumentMoniker": "Backend\\Services\\DatabaseService.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Services\\DatabaseService.cs",
-              "RelativeToolTip": "Backend\\Services\\DatabaseService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAmAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Services\\DatabaseService.cs",
+              "RelativeDocumentMoniker": "backend\\Services\\DatabaseService.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Services\\DatabaseService.cs",
+              "RelativeToolTip": "backend\\Services\\DatabaseService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-06T20:53:47.03Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-06T20:53:47.03Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Person.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Models\\Person.cs",
-              "RelativeDocumentMoniker": "Backend\\Models\\Person.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Models\\Person.cs",
-              "RelativeToolTip": "Backend\\Models\\Person.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Models\\Person.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\Person.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Models\\Person.cs",
+              "RelativeToolTip": "backend\\Models\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T20:37:45.376Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "Backend\\WeatherForecast.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\WeatherForecast.cs",
-              "RelativeToolTip": "Backend\\WeatherForecast.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "backend\\WeatherForecast.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\WeatherForecast.cs",
+              "RelativeToolTip": "backend\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T20:24:33.66Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "launchSettings.json",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Backend\\Properties\\launchSettings.json",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Backend\\Properties\\launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "backend\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Properties\\launchSettings.json",
+              "RelativeToolTip": "backend\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-06T20:30:09.634Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\appsettings.json",
-              "RelativeDocumentMoniker": "Backend\\appsettings.json",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\appsettings.json",
-              "RelativeToolTip": "Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAoAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-04-06T20:29:36.906Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "Backend\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "Backend\\Controllers\\WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "backend\\Controllers\\WeatherForecastController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAQwAoAAABCAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T20:18:12.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Program.cs",
-              "RelativeDocumentMoniker": "Backend\\Program.cs",
-              "ToolTip": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Program.cs",
-              "RelativeToolTip": "Backend\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAADwAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-06T20:17:27.35Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "LoginRequest.cs",
+              "DocumentMoniker": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Models\\LoginRequest.cs",
+              "RelativeDocumentMoniker": "backend\\Models\\LoginRequest.cs",
+              "ToolTip": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\backend\\Models\\LoginRequest.cs",
+              "RelativeToolTip": "backend\\Models\\LoginRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-07T16:53:13.682Z"
             }
           ]
         }

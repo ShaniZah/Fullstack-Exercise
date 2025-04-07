@@ -6,7 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { MatButton } from '@angular/material/button';
-import { LoginRequest, LoginService } from '../services/login.service';
+import { LoginRequest, AuthService } from '../services/auth.service';
 @Component({
   selector: 'app-login',
   imports: [
@@ -21,7 +21,7 @@ import { LoginRequest, LoginService } from '../services/login.service';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  constructor(private router: Router, private loginService : LoginService) {}
+  constructor(private router: Router, private authService : AuthService) {}
 
   username: string = '';
   password: string = '';
@@ -33,18 +33,18 @@ export class LoginComponent {
 
   login() {
     if (this.locked) return;
-
     const loginInfo: LoginRequest = {
       username: this.username,
       password: this.password,
     };
 
 
-    this.loginService.login(loginInfo).subscribe({
-      next: () => {
+    this.authService.login(loginInfo).subscribe({
+      next: (response) => {
         this.errorMessage = '';
         this.failedAttempts = 0;
         clearInterval(this.lockTimer);
+        this.authService.updateJwtToken(response.token);
         this.router.navigate(['/dashboard']);
       },
       error: () => {
