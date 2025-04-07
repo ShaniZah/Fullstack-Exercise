@@ -7,7 +7,8 @@ import { Observable } from 'rxjs';
 import { User, UserService } from '../services/user.service';
 import { ReportComponent } from '../report/report.component';
 import { UploadComponent } from "../upload/upload.component";
-
+import { AuthService } from '../services/auth.service';
+import { Router } from '@angular/router';
 @Component({
   selector: 'app-dashboard',
   imports: [CommonModule, MatToolbarModule, MatButtonModule, MatExpansionModule, ReportComponent, UploadComponent],
@@ -18,6 +19,7 @@ import { UploadComponent } from "../upload/upload.component";
 export class DashboardComponent implements OnInit {
   users: User[] = [];
   private userService = inject(UserService);
+  constructor(private router: Router, private authService : AuthService) {} // is there a difference?
 
   ngOnInit(): void {
     this.userService.getUsers().subscribe(data => {
@@ -31,8 +33,10 @@ export class DashboardComponent implements OnInit {
     });
   }
 
-  logout() {
-    window.location.href = '/';
+  onLogout() {
+    console.log("logging out...");
+    this.authService.logout();
+    this.router.navigate(['/login']);
     // update guard
   }
 

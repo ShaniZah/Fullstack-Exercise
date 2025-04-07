@@ -6,7 +6,7 @@ import { guardGuard } from './guard.guard';
 
 export const routes: Routes = [
   {
-    path: '',
+    path: 'login',
     pathMatch: 'full',
     loadComponent: () => {
       return import(`./login/login.component`).then((m) => m.LoginComponent);

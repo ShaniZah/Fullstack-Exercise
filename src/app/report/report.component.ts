@@ -56,12 +56,22 @@ export class ReportComponent {
     this.selectedLevel3 = null;
     this.level3Options = this.selectedLevel2?.values || [];
   }
-
   submitReport() {
     if (this.selectedLevel1 && this.selectedLevel2 && (this.level3Options.length === 0 || this.selectedLevel3)) {
-      this.message = 'Your request is being processed.';
+      this.message = 'Sending...';
+  
+      this.reportService.submitReport().subscribe({
+        next: (res) => {
+          this.message = res.message;
+        },
+        error: (err) => {
+          console.error('Error submitting report:', err);
+          this.message = 'An error occurred while sending your report.';
+        }
+      });
     } else {
       this.message = 'Please complete all dropdowns.';
     }
   }
+  
 }

@@ -21,6 +21,11 @@ export class AuthService {
   updateJwtToken(jwtToken: string) {
     localStorage.setItem(environment.access_token, jwtToken);
   }
+
+  logout(): void {
+    localStorage.removeItem(environment.access_token);
+    //  clear other stuff like refresh tokens or user info?
+  }
 }
 
 type LoginResponse = { token: string };
