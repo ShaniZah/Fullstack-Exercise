@@ -6,8 +6,7 @@ import { MatInputModule } from '@angular/material/input';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { MatButton } from '@angular/material/button';
-import { UserService } from '../services/user.service';
-
+import { LoginRequest, LoginService } from '../services/login.service';
 @Component({
   selector: 'app-login',
   imports: [
@@ -22,7 +21,7 @@ import { UserService } from '../services/user.service';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  constructor(private router: Router) {}
+  constructor(private router: Router, private loginService : LoginService) {}
 
   username: string = '';
   password: string = '';
@@ -35,31 +34,42 @@ export class LoginComponent {
   login() {
     if (this.locked) return;
 
-    if (this.username === 'myUser' && this.password === 'myPass') {
-      this.errorMessage = '';
-      this.locked = false;
-      clearInterval(this.lockTimer);
-      this.router.navigate(['/dashboard']);
-    } else this.failedAttempts++;
+    const loginInfo: LoginRequest = {
+      username: this.username,
+      password: this.password,
+    };
 
-    if (this.failedAttempts >= 3) {
-      this.locked = true;
-      this.countdown = 60;
-      this.errorMessage = `Locked. Try again in ${this.countdown}s.`;
 
-      this.lockTimer = setInterval(() => {
-        this.countdown--;
-        if (this.countdown <= 0) {
-          clearInterval(this.lockTimer);
-          this.failedAttempts = 0;
-          this.locked = false;
-          this.errorMessage = '';
-        } else {
+    this.loginService.login(loginInfo).subscribe({
+      next: () => {
+        this.errorMessage = '';
+        this.failedAttempts = 0;
+        clearInterval(this.lockTimer);
+        this.router.navigate(['/dashboard']);
+      },
+      error: () => {
+        this.failedAttempts++;
+        if (this.failedAttempts >= 3) {
+          this.locked = true;
+          this.countdown = 60;
           this.errorMessage = `Locked. Try again in ${this.countdown}s.`;
+
+          this.lockTimer = setInterval(() => {
+            this.countdown--;
+            if (this.countdown <= 0) {
+              clearInterval(this.lockTimer);
+              this.failedAttempts = 0;
+              this.locked = false;
+              this.errorMessage = '';
+            } else {
+              this.errorMessage = `Locked. Try again in ${this.countdown}s.`;
+            }
+          }, 1000);
+        } else {
+          this.errorMessage = `Invalid credentials (${this.failedAttempts}/3)`;
         }
-      }, 1000);
-    } else {
-      this.errorMessage = `Invalid credentials (${this.failedAttempts}/3)`;
-    }
+      },
+    });
   }
+
 }

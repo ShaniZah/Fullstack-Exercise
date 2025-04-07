@@ -1,33 +1,33 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Backend.csproj": {}
+    "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Backend.csproj": {
+    "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Backend.csproj",
+        "projectUniqueName": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\Backend.csproj",
-        "packagesPath": "C:\\Users\\Cybercortex\\.nuget\\packages\\",
-        "outputPath": "D:\\Ultimate Folder GO\\Programming\\Fullstack-Exercise\\Backend\\Backend\\obj\\",
+        "projectPath": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\Backend.csproj",
+        "packagesPath": "C:\\Users\\shani\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Cybercortex\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "net8.0"
+          "net7.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "net8.0": {
-            "targetAlias": "net8.0",
+          "net7.0": {
+            "targetAlias": "net7.0",
             "projectReferences": {}
           }
         },
@@ -35,16 +35,11 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "net8.0": {
-          "targetAlias": "net8.0",
+        "net7.0": {
+          "targetAlias": "net7.0",
           "dependencies": {
             "Newtonsoft.Json": {
               "target": "Package",
@@ -78,7 +73,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

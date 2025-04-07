@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\backend",
+    "\\backend\\Backend",
+    "\\backend\\Backend\\Controllers",
+    "\\backend\\Backend\\Models",
+    "\\backend\\HealthBackend"
+  ],
+  "SelectedNode": "\\backend\\Backend.sln",
+  "PreviewInSolutionExplorer": false
+}

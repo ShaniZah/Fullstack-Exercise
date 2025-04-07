@@ -27,6 +27,6 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(`${this.URL}/data/GetAll`).pipe(tap(console.log));
+    return this.http.get<User[]>(`${this.URL}/data/GetAll`).pipe(tap(console.log)); // what is tap?
   }
 }
