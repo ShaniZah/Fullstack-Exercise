@@ -2,7 +2,8 @@ import { Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { guardGuard } from './guard.guard';
+import { authGuard } from './guards/auth.guard';
+import { loginRedirectGuard } from './guards/login-redirect.guard';
 
 export const routes: Routes = [
   {
@@ -16,6 +17,7 @@ export const routes: Routes = [
     loadComponent: () => {
       return import(`./login/login.component`).then((m) => m.LoginComponent);
     },
+    canActivate: [loginRedirectGuard]
   },
   {
     path: 'dashboard',
@@ -24,6 +26,6 @@ export const routes: Routes = [
         (m) => m.DashboardComponent
       );
     },
-    canActivate: [guardGuard],
+    canActivate: [authGuard],
   },
 ];

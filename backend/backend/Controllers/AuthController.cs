@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using Newtonsoft.Json.Linq;
 using Backend.Services;
+using Microsoft.AspNetCore.Authorization;
 
 namespace Backend.Controllers
 {
@@ -83,6 +84,13 @@ namespace Backend.Controllers
       );
 
       return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+    [Authorize]
+    [HttpGet("ValidateToken")]
+    public IActionResult ValidateToken()
+    {
+      return Ok(new { valid = true });
     }
   }
 }

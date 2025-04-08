@@ -11,17 +11,17 @@ namespace Backend.Controllers
   [ApiController]
   [Route("[controller]")]
   [Authorize]
-  public class FileUploadController : Controller
+  public class FileController : Controller
   {
     private readonly IFileProcessingService _fileProcessingService;
 
-    public FileUploadController(IFileProcessingService fileProcessingService)
+    public FileController(IFileProcessingService fileProcessingService)
     {
       _fileProcessingService = fileProcessingService;
     }
 
     [HttpPost("Upload")]
-    public async Task<IActionResult> FileUpload([FromForm] IFormFile file)
+    public async Task<IActionResult> Upload([FromForm] IFormFile file)
     {
       if (file == null || file.Length == 0)
         return BadRequest("Empty file");
