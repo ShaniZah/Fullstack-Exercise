@@ -1,11 +1,20 @@
 using Backend.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+  serverOptions.ListenAnyIP(7200, listenOptions =>
+  {
+    listenOptions.UseHttps("localhost.pfx", "yourPassword123");
+  });
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -75,6 +84,7 @@ builder.Services.AddAuthentication(options =>
   };
 });
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -85,6 +95,17 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.UseStaticFiles();
+
+//app.UseStaticFiles(new StaticFileOptions
+//{
+//  FileProvider = new PhysicalFileProvider(Path.Combine(app.Environment.ContentRootPath, "wwwroot")),
+//  RequestPath = "/wwwroot"
+//});
+app.UseRouting();
+app.MapFallbackToFile("index.html");
+
+
 app.UseCors("AllowAngular");
 
 app.UseAuthentication();

@@ -22,6 +22,7 @@ namespace Backend.Controllers
       _config = config;
     }
 
+    // authenticate user and return a jwt in a cookie 
     [HttpPost("Login")]
     public IActionResult Login([FromBody] LoginRequest request)
     {
@@ -33,14 +34,15 @@ namespace Backend.Controllers
         return Unauthorized("Invalid credentials");
       }
 
+      // jwt eith user info and sessionID
       var token = GenerateJwtToken(request.Username);
 
       // pass jwt with cookie to prevent scripting attacks 
       var cookieOptions = new CookieOptions
       {
-        HttpOnly = true, // prevent scripting attacks
-        Secure = true,   // required if using HTTPS
-        SameSite = SameSiteMode.None, 
+        HttpOnly = true, // prevent scripting attacks (xss)
+        Secure = true,   // cookie is sent only over https
+        SameSite = SameSiteMode.None, // for cross site usage (frontend is localhost:4200, backend is localhost:7200)
         Expires = DateTime.UtcNow.AddHours(1)
       };
 
@@ -50,9 +52,12 @@ namespace Backend.Controllers
 
     }
 
+    // delete the cookie and blacklist the tokens sessionID
     [HttpPost("Logout")]
     public IActionResult Logout([FromServices] TokenBlacklistService blacklist)
     {
+
+      //get the sessionId from the current token's claims
       var sessionId = User.FindFirst("sessionId")?.Value;
       if (sessionId != null)
       {
@@ -63,18 +68,20 @@ namespace Backend.Controllers
       return Ok(new { message = "Logged out" });
     }
 
+    //generate a jwt with the users name and a unique sessionID
     private string GenerateJwtToken(string username)
     {
       var jwtSettings = _config.GetSection("Jwt");
       var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]));
       var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-      var sessionId = Guid.NewGuid().ToString(); // 🔐 unique identifier
+      var sessionId = Guid.NewGuid().ToString(); //unique identifier
 
+      // claims embeded in the token 
       var claims = new List<Claim>
-    {
+      {
         new Claim(ClaimTypes.Name, username),
         new Claim("sessionId", sessionId)
-    };
+      };
       var token = new JwtSecurityToken(
           issuer: jwtSettings["Issuer"],
           audience: jwtSettings["Audience"],
@@ -83,9 +90,11 @@ namespace Backend.Controllers
           signingCredentials: creds
       );
 
+      // return encoded jwt string 
       return new JwtSecurityTokenHandler().WriteToken(token);
     }
 
+    // used by angular guard to get a non blacklisted token, to verify its still valid 
     [Authorize]
     [HttpGet("ValidateToken")]
     public IActionResult ValidateToken()

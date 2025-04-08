@@ -1,0 +1,1052 @@
+{
+  "Version": 1,
+  "Hash": "006rfwHr6edbNA5VPsVQRBXBErvnHif6I2npmftOGbw=",
+  "Source": "Backend",
+  "BasePath": "_content/Backend",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "Backend\\wwwroot",
+      "Source": "Backend",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\assets\\health_reasons.json",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "assets/health_reasons#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "oxndhkqu49",
+      "Integrity": "bFvNajlHAG0AUG/s9H2UStXRmI9f8G0Rmhx0BG/stto=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\assets\\health_reasons.json"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ANJX3GAW.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "chunk-ANJX3GAW#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "b80gznl358",
+      "Integrity": "1ctiqgWAej7YlaKWBLkF31RIA4UsgQoZhpYWw7raxn8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chunk-ANJX3GAW.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-CCOELB5H.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "chunk-CCOELB5H#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "1is667bnoi",
+      "Integrity": "N3hJBveoovDPE1jD0a0bGW9J2ODL88VsVPmo6oud8cw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chunk-CCOELB5H.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-X6AA7QQF.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "chunk-X6AA7QQF#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "eaap23j488",
+      "Integrity": "Vl4Um//2sb5Xk2JmEuH6N20/CgE5GCWKirOECYGSwYk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chunk-X6AA7QQF.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZWUYHGBN.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "chunk-ZWUYHGBN#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jhoq8kddb3",
+      "Integrity": "d+a4TLe7bSZCmbt6+ph4kgt6YvL5nSCBLrCX4/pOWwI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chunk-ZWUYHGBN.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZXAJCFQX.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "chunk-ZXAJCFQX#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "vjckk9k2t3",
+      "Integrity": "i5SBxrw8x5Yy4A2cQii7viRoJa1vlfygRa+NhVPZFBE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\chunk-ZXAJCFQX.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\index.html",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "index#[.{fingerprint}]?.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pcq88nm1vm",
+      "Integrity": "l2RX4EsvWTzuicPvP2XublLrs6guvKw87EIm8xFUfG0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\index.html"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\main-PBHU4UUS.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "main-PBHU4UUS#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sydd1h0e39",
+      "Integrity": "DHMJHySLJZCwSSU02B/TqK7AfePSxtlyfLclPtEU6uQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\main-PBHU4UUS.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\polyfills-FFHMD2TL.js",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "polyfills-FFHMD2TL#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "39tegmrjtp",
+      "Integrity": "adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\polyfills-FFHMD2TL.js"
+    },
+    {
+      "Identity": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\styles-36AW6TKX.css",
+      "SourceId": "Backend",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\",
+      "BasePath": "_content/Backend",
+      "RelativePath": "styles-36AW6TKX#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "xbvuevk2d9",
+      "Integrity": "45vetXvNJHyuBBnLhXQKvHq2/pbsHuTkPNhfJ6RmBnQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\styles-36AW6TKX.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/health_reasons.json",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\assets\\health_reasons.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bFvNajlHAG0AUG/s9H2UStXRmI9f8G0Rmhx0BG/stto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 18:10:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-bFvNajlHAG0AUG/s9H2UStXRmI9f8G0Rmhx0BG/stto="
+        }
+      ]
+    },
+    {
+      "Route": "assets/health_reasons.oxndhkqu49.json",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\assets\\health_reasons.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "246"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"bFvNajlHAG0AUG/s9H2UStXRmI9f8G0Rmhx0BG/stto=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 07 Apr 2025 18:10:54 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "oxndhkqu49"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/health_reasons.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-bFvNajlHAG0AUG/s9H2UStXRmI9f8G0Rmhx0BG/stto="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ANJX3GAW.b80gznl358.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ANJX3GAW.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ctiqgWAej7YlaKWBLkF31RIA4UsgQoZhpYWw7raxn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "b80gznl358"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-ANJX3GAW.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ctiqgWAej7YlaKWBLkF31RIA4UsgQoZhpYWw7raxn8="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ANJX3GAW.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ANJX3GAW.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "124932"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ctiqgWAej7YlaKWBLkF31RIA4UsgQoZhpYWw7raxn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ctiqgWAej7YlaKWBLkF31RIA4UsgQoZhpYWw7raxn8="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-CCOELB5H.1is667bnoi.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-CCOELB5H.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3hJBveoovDPE1jD0a0bGW9J2ODL88VsVPmo6oud8cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "1is667bnoi"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-CCOELB5H.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3hJBveoovDPE1jD0a0bGW9J2ODL88VsVPmo6oud8cw="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-CCOELB5H.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-CCOELB5H.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2747"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"N3hJBveoovDPE1jD0a0bGW9J2ODL88VsVPmo6oud8cw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-N3hJBveoovDPE1jD0a0bGW9J2ODL88VsVPmo6oud8cw="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-X6AA7QQF.eaap23j488.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-X6AA7QQF.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vl4Um//2sb5Xk2JmEuH6N20/CgE5GCWKirOECYGSwYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "eaap23j488"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-X6AA7QQF.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vl4Um//2sb5Xk2JmEuH6N20/CgE5GCWKirOECYGSwYk="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-X6AA7QQF.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-X6AA7QQF.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10227"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Vl4Um//2sb5Xk2JmEuH6N20/CgE5GCWKirOECYGSwYk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Vl4Um//2sb5Xk2JmEuH6N20/CgE5GCWKirOECYGSwYk="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ZWUYHGBN.jhoq8kddb3.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZWUYHGBN.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "404882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d+a4TLe7bSZCmbt6+ph4kgt6YvL5nSCBLrCX4/pOWwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jhoq8kddb3"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-ZWUYHGBN.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d+a4TLe7bSZCmbt6+ph4kgt6YvL5nSCBLrCX4/pOWwI="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ZWUYHGBN.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZWUYHGBN.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "404882"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d+a4TLe7bSZCmbt6+ph4kgt6YvL5nSCBLrCX4/pOWwI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d+a4TLe7bSZCmbt6+ph4kgt6YvL5nSCBLrCX4/pOWwI="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ZXAJCFQX.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZXAJCFQX.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i5SBxrw8x5Yy4A2cQii7viRoJa1vlfygRa+NhVPZFBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-i5SBxrw8x5Yy4A2cQii7viRoJa1vlfygRa+NhVPZFBE="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-ZXAJCFQX.vjckk9k2t3.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZXAJCFQX.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "10326"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"i5SBxrw8x5Yy4A2cQii7viRoJa1vlfygRa+NhVPZFBE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vjckk9k2t3"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-ZXAJCFQX.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-i5SBxrw8x5Yy4A2cQii7viRoJa1vlfygRa+NhVPZFBE="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l2RX4EsvWTzuicPvP2XublLrs6guvKw87EIm8xFUfG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-l2RX4EsvWTzuicPvP2XublLrs6guvKw87EIm8xFUfG0="
+        }
+      ]
+    },
+    {
+      "Route": "index.pcq88nm1vm.html",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"l2RX4EsvWTzuicPvP2XublLrs6guvKw87EIm8xFUfG0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pcq88nm1vm"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-l2RX4EsvWTzuicPvP2XublLrs6guvKw87EIm8xFUfG0="
+        }
+      ]
+    },
+    {
+      "Route": "main-PBHU4UUS.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\main-PBHU4UUS.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DHMJHySLJZCwSSU02B/TqK7AfePSxtlyfLclPtEU6uQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DHMJHySLJZCwSSU02B/TqK7AfePSxtlyfLclPtEU6uQ="
+        }
+      ]
+    },
+    {
+      "Route": "main-PBHU4UUS.sydd1h0e39.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\main-PBHU4UUS.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "21725"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DHMJHySLJZCwSSU02B/TqK7AfePSxtlyfLclPtEU6uQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sydd1h0e39"
+        },
+        {
+          "Name": "label",
+          "Value": "main-PBHU4UUS.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DHMJHySLJZCwSSU02B/TqK7AfePSxtlyfLclPtEU6uQ="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-FFHMD2TL.39tegmrjtp.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "39tegmrjtp"
+        },
+        {
+          "Name": "label",
+          "Value": "polyfills-FFHMD2TL.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-FFHMD2TL.js",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\polyfills-FFHMD2TL.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "34519"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-adzqBFZD3Q3pmKPNDMu7RrRr/yZRqHpWxzwo6yCOj5g="
+        }
+      ]
+    },
+    {
+      "Route": "styles-36AW6TKX.css",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\styles-36AW6TKX.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"45vetXvNJHyuBBnLhXQKvHq2/pbsHuTkPNhfJ6RmBnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-45vetXvNJHyuBBnLhXQKvHq2/pbsHuTkPNhfJ6RmBnQ="
+        }
+      ]
+    },
+    {
+      "Route": "styles-36AW6TKX.xbvuevk2d9.css",
+      "AssetFile": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\styles-36AW6TKX.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "6979"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"45vetXvNJHyuBBnLhXQKvHq2/pbsHuTkPNhfJ6RmBnQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 08 Apr 2025 21:38:10 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xbvuevk2d9"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-36AW6TKX.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-45vetXvNJHyuBBnLhXQKvHq2/pbsHuTkPNhfJ6RmBnQ="
+        }
+      ]
+    }
+  ]
+}

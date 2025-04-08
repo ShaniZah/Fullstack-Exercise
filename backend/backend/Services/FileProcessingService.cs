@@ -25,7 +25,7 @@ namespace Backend.Services
         await file.CopyToAsync(stream);
       }
 
-      // Parse CSV content
+      // parse csv file content 
       var jsonData = new List<Dictionary<string, string>>();
       var content = await System.IO.File.ReadAllTextAsync(filePath);
       var lines = content.Split(new[] { "\r\n", "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
