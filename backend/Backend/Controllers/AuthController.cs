@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
+using Newtonsoft.Json.Linq;
 
 namespace Backend.Controllers
 {
@@ -31,7 +32,20 @@ namespace Backend.Controllers
       }
 
       var token = GenerateJwtToken(request.Username);
-      return Ok(new { token });
+      var cookieOptions = new CookieOptions
+      {
+        HttpOnly = true, // prevent JS access
+        Secure = true,   // required if using HTTPS
+        SameSite = SameSiteMode.None, 
+        Expires = DateTime.UtcNow.AddHours(1)
+      };
+
+      Response.Cookies.Append("jwt", token, cookieOptions);
+
+      return Ok(new { message = "Logged in successfully" });
+
+     
+      //return Ok(new { token });
     }
 
     private string GenerateJwtToken(string username)

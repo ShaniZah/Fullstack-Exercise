@@ -21,7 +21,8 @@ builder.Services.AddCors(options =>
   {
     policy.WithOrigins("http://localhost:4200") // Angular's default port
           .AllowAnyHeader()
-          .AllowAnyMethod();
+          .AllowAnyMethod()
+          .AllowCredentials(); // for cookies
   });
 });
 
@@ -35,6 +36,19 @@ builder.Services.AddAuthentication(options =>
 })
   .AddJwtBearer(options =>
 {
+  //get JWT from cookie instead of Authorization header
+  options.Events = new JwtBearerEvents
+  {
+    OnMessageReceived = context =>
+    {
+      if (context.Request.Cookies.ContainsKey("jwt"))
+      {
+        context.Token = context.Request.Cookies["jwt"];
+      }
+      return Task.CompletedTask;
+    }
+  };
+
   options.TokenValidationParameters = new TokenValidationParameters
   {
     ValidateIssuer = true,

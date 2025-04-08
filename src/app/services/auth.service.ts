@@ -15,12 +15,12 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(loginInfo: LoginRequest) {
-    return this.http.post<LoginResponse>(`${environment.url}/Auth/Login`, loginInfo);
+    return this.http.post<LoginResponse>(`${environment.url}/Auth/Login`, loginInfo, {withCredentials:true});
   }
 
-  updateJwtToken(jwtToken: string) {
-    localStorage.setItem(environment.access_token, jwtToken);
-  }
+  // updateJwtToken(jwtToken: string) {
+  //   localStorage.setItem(environment.access_token, jwtToken);
+  // }
 
   logout(): void {
     localStorage.removeItem(environment.access_token);

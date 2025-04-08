@@ -13,7 +13,7 @@ export class FileService {
     const formData = new FormData();
     formData.append('file', file);
     return this.http
-      .post(`${this.URL}/FileUpload/Upload`, formData)
+      .post(`${this.URL}/FileUpload/Upload`, formData, {withCredentials:true})
       .pipe(catchError(this.handleError));
   }
 

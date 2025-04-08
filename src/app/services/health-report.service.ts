@@ -19,7 +19,7 @@ export class HealthReportService {
   }
 
   submitReport(): Observable<{ message: string }> {
-    return this.http.post<{ message: string }>(`${environment.url}/report`, {}); 
+    return this.http.post<{ message: string }>(`${environment.url}/report`, {}, {withCredentials:true}); 
   }
   
 }

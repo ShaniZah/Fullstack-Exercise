@@ -44,7 +44,7 @@ export class LoginComponent {
         this.errorMessage = '';
         this.failedAttempts = 0;
         clearInterval(this.lockTimer);
-        this.authService.updateJwtToken(response.token);
+        //this.authService.updateJwtToken(response.token);
         this.router.navigate(['/dashboard']);
       },
       error: () => {
