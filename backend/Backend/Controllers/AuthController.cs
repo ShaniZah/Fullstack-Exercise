@@ -28,8 +28,8 @@ namespace Backend.Controllers
       if (request.Username != defaultUsername || request.Password != defaultPassword)
       {
         return Unauthorized("Invalid credentials");
-
       }
+
       var token = GenerateJwtToken(request.Username);
       return Ok(new { token });
     }

@@ -36,19 +36,9 @@
     ]
   },
   {
-    "ContainingType": "Backend.Controllers.ReportController",
-    "Method": "SubmitReport",
-    "RelativePath": "Report",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Backend.Controllers.FileUploadController",
     "Method": "FileUpload",
-    "RelativePath": "Upload",
+    "RelativePath": "FileUpload/Upload",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -84,6 +74,16 @@
         "IsRequired": false
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Backend.Controllers.ReportController",
+    "Method": "SubmitReport",
+    "RelativePath": "Report",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]
