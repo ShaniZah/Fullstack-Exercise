@@ -1,0 +1,90 @@
+[
+  {
+    "Date": "Date",
+    "Start Time": "Start Time",
+    "Distance (km)": "Distance",
+    "Duration (min)": "Duration",
+    "Average Speed (km/h)": "Average Speed",
+    "Average Heart Rate (bpm)": "Average Heart Rate"
+  },
+  {
+    "Date": "2023-05-21",
+    "Start Time": "08:54:00",
+    "Distance (km)": "6.98",
+    "Duration (min)": "67.64",
+    "Average Speed (km/h)": "6.19",
+    "Average Heart Rate (bpm)": "142"
+  },
+  {
+    "Date": "2023-08-13",
+    "Start Time": "21:23:00",
+    "Distance (km)": "7.46",
+    "Duration (min)": "129.68",
+    "Average Speed (km/h)": "3.45",
+    "Average Heart Rate (bpm)": "115"
+  },
+  {
+    "Date": "2023-07-08",
+    "Start Time": "14:29:00",
+    "Distance (km)": "16.16",
+    "Duration (min)": "173.53",
+    "Average Speed (km/h)": "5.59",
+    "Average Heart Rate (bpm)": "146"
+  },
+  {
+    "Date": "2023-03-23",
+    "Start Time": "22:02:00",
+    "Distance (km)": "13.33",
+    "Duration (min)": "126.75",
+    "Average Speed (km/h)": "6.31",
+    "Average Heart Rate (bpm)": "133"
+  },
+  {
+    "Date": "2023-05-15",
+    "Start Time": "04:25:00",
+    "Distance (km)": "3.63",
+    "Duration (min)": "49.21",
+    "Average Speed (km/h)": "4.43",
+    "Average Heart Rate (bpm)": "64"
+  },
+  {
+    "Date": "2024-01-31",
+    "Start Time": "14:06:00",
+    "Distance (km)": "8.15",
+    "Duration (min)": "128.77",
+    "Average Speed (km/h)": "3.80",
+    "Average Heart Rate (bpm)": "151"
+  },
+  {
+    "Date": "2023-09-08",
+    "Start Time": "18:17:00",
+    "Distance (km)": "17.16",
+    "Duration (min)": "96.40",
+    "Average Speed (km/h)": "10.68",
+    "Average Heart Rate (bpm)": "97"
+  },
+  {
+    "Date": "2023-06-20",
+    "Start Time": "19:19:00",
+    "Distance (km)": "10.51",
+    "Duration (min)": "17.16",
+    "Average Speed (km/h)": "36.75",
+    "Average Heart Rate (bpm)": "75"
+  },
+  {
+    "Date": "2023-06-26",
+    "Start Time": "00:39:00",
+    "Distance (km)": "3.87",
+    "Duration (min)": "143.22",
+    "Average Speed (km/h)": "1.62",
+    "Average Heart Rate (bpm)": "130"
+  },
+  {
+    "Date": "2024-03-19",
+    "Start Time": "00:46:00",
+    "Distance (km)": "18.14",
+    "Duration (min)": "19.10",
+    "Average Speed (km/h)": "56.98",
+    "Average Heart Rate (bpm)": "171"
+  }
+]
