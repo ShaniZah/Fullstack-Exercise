@@ -48,6 +48,7 @@ builder.Services.AddAuthentication(options =>
       }
       return Task.CompletedTask;
     },
+
     OnTokenValidated = context =>
     {
       var sessionId = context.Principal?.FindFirst("sessionId")?.Value;

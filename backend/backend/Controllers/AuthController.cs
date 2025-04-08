@@ -47,8 +47,6 @@ namespace Backend.Controllers
 
       return Ok(new { message = "Logged in successfully" });
 
-     
-      //return Ok(new { token });
     }
 
     [HttpPost("Logout")]
@@ -69,10 +67,17 @@ namespace Backend.Controllers
       var jwtSettings = _config.GetSection("Jwt");
       var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtSettings["Key"]));
       var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+      var sessionId = Guid.NewGuid().ToString(); // 🔐 unique identifier
 
+      var claims = new List<Claim>
+    {
+        new Claim(ClaimTypes.Name, username),
+        new Claim("sessionId", sessionId)
+    };
       var token = new JwtSecurityToken(
           issuer: jwtSettings["Issuer"],
           audience: jwtSettings["Audience"],
+          claims: claims,
           expires: DateTime.UtcNow.AddMinutes(Convert.ToDouble(jwtSettings["ExpiresInMinutes"])),
           signingCredentials: creds
       );
