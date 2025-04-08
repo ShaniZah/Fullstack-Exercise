@@ -35,8 +35,14 @@ export class DashboardComponent implements OnInit {
 
   onLogout() {
     console.log("logging out...");
-    this.authService.logout();
-    this.router.navigate(['/login']);
+    this.authService.logout().subscribe({
+      next: () => {
+        this.router.navigate(['/login']);
+      },
+      error: (err) => {
+        console.error('Logout failed', err);
+      }
+    });
     // update guard
   }
 

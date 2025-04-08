@@ -22,9 +22,10 @@ export class AuthService {
   //   localStorage.setItem(environment.access_token, jwtToken);
   // }
 
-  logout(): void {
-    localStorage.removeItem(environment.access_token);
-    //  clear other stuff like refresh tokens or user info?
+  logout(): Observable<any> {
+    return this.http.post(`${environment.url}/Auth/Logout`, {}, {
+      withCredentials: true
+    });
   }
 }
 

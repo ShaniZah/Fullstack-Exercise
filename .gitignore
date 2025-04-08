@@ -47,8 +47,6 @@ Thumbs.db
 ##
 ## Get latest from `dotnet new gitignore`
 
-/backend/
-
 # dotenv files
 .env
 
@@ -528,18 +526,3 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
-
-.backend/backend/[Dd]ebug/
-.backend/backend/[Dd]ebugPublic/
-.backend/backend/[Rr]elease/
-.backend/backend/[Rr]eleases/
-.backend/backend/x64/
-.backend/backend/x86/
-.backend/backend/[Ww][Ii][Nn]32/
-.backend/backend/[Aa][Rr][Mm]/
-.backend/backend/[Aa][Rr][Mm]64/
-.backend/backend/bld/
-.backend/backend/[Bb]in/
-.backend/backend/[Oo]bj/
-.backend/backend/[Ll]og/
-.backend/backend/[Ll]ogs/
