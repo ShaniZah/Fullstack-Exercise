@@ -11,7 +11,7 @@ export const loginRedirectGuard: CanActivateFn = () => {
   return auth.validateToken().pipe(
     map((isValid) => {
       if (isValid) {
-        router.navigate([`/${appRoutes.dashboard}`]); //already logged in -> redirect
+        router.navigate([appRoutes.root]); //already logged in -> redirect
         return false;
       }
       return true; // not logged in -> allow access to /login

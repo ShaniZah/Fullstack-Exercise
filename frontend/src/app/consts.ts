@@ -2,8 +2,13 @@ import { environment } from "../environments/environment.development";
 
 export const appRoutes = {
     login: 'login',
-    dashboard: 'dashboard'
-}
+    dashboard: 'dashboard',
+    reports: 'reports',
+    runningHistory: 'running-history',
+    root: 'root'
+} as const;
+
+export type RouteKeys = keyof typeof appRoutes;
 
 const domain  = environment.url;
 export const APIs = {

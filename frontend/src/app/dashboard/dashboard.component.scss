@@ -1,25 +1,28 @@
 mat-toolbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .spacer {
-    flex: 1 1 auto;
-  }
-  .report-upload-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 2rem;
-    margin-top: 2rem;
-    flex-wrap: wrap;
-  }
-  
-  .report-upload-container > * {
-    flex: 1 1 48%;
-    max-width: 48%;
-    box-sizing: border-box;
-  }
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+.report-upload-container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.report-upload-container > * {
+  flex: 1 1 48%;
+  max-width: 48%;
+  box-sizing: border-box;
+}
+
+.dashboard-container {
+  padding: 20px;
+}

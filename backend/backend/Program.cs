@@ -8,14 +8,6 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.WebHost.ConfigureKestrel(serverOptions =>
-{
-  serverOptions.ListenAnyIP(7200, listenOptions =>
-  {
-    listenOptions.UseHttps("localhost.pfx", "yourPassword123");
-  });
-});
-
 builder.Services.AddControllers();
 builder.Services.AddHttpClient();
 builder.Services.AddScoped<IDatabaseService, DatabaseService>();

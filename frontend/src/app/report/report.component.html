@@ -1,27 +1,16 @@
-<mat-card>
-    <h2>Report Health Issue</h2>
-  
-    <mat-form-field class="full-width" appearance="outline">
-      <mat-label>Category</mat-label>
-      <mat-select [(ngModel)]="selectedLevel1" (selectionChange)="onLevel1Change()">
-        <mat-option *ngFor="let item of level1Options" [value]="item">{{ item.name }}</mat-option>
+<mat-card class="report-card">
+  <h2>Report Health Issue</h2>
+
+  <ng-container *ngFor="let options of levelOptions; let i = index">
+    <mat-form-field class="full-width light-bg" appearance="outline">
+      <mat-select placeholder="choose option" [(ngModel)]="selectedLevels[i]" (selectionChange)="onLevelChange(i)">
+        <mat-option *ngFor="let item of options" [value]="item">
+          {{ item.name }}
+        </mat-option>
       </mat-select>
     </mat-form-field>
-  
-    <mat-form-field class="full-width" appearance="outline" *ngIf="level2Options.length">
-      <mat-label>Subcategory</mat-label>
-      <mat-select [(ngModel)]="selectedLevel2" (selectionChange)="onLevel2Change()">
-        <mat-option *ngFor="let item of level2Options" [value]="item">{{ item.name }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-    <mat-form-field class="full-width" appearance="outline" *ngIf="level3Options.length">
-      <mat-label>Detail</mat-label>
-      <mat-select [(ngModel)]="selectedLevel3">
-        <mat-option *ngFor="let item of level3Options" [value]="item">{{ item.name }}</mat-option>
-      </mat-select>
-    </mat-form-field>
-  
-    <button mat-raised-button color="accent" (click)="submitReport()">Submit</button>
-    <p *ngIf="message">{{ message }}</p>
-  </mat-card>
+  </ng-container>
+
+  <button mat-raised-button color="accent" (click)="submitReport()">Submit</button>
+  <p *ngIf="message">{{ message }}</p>
+</mat-card>

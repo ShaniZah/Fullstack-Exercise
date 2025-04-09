@@ -1,15 +1,14 @@
+import { CommonModule, NgFor } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { User, UserService } from '../services/user.service';
-import { NgIf, NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-user-data',
   standalone: true,
-  imports: [CommonModule, MatExpansionModule, NgIf, NgFor],
+  imports: [CommonModule, MatExpansionModule, NgFor],
   templateUrl: './user-data.component.html',
-  styleUrl: './user-data.component.scss'
+  styleUrl: './user-data.component.scss',
 })
 export class UserDataComponent implements OnInit {
   users: User[] = [];
@@ -17,8 +16,8 @@ export class UserDataComponent implements OnInit {
   constructor(private userService: UserService) {}
 
   ngOnInit(): void {
-    this.userService.getUsers().subscribe(data => {
-      this.users = data.map(user => {
+    this.userService.getUsers().subscribe((data) => {
+      this.users = data.map((user) => {
         user.bmi = this.calculateBMI(user.height, user.weight);
         const { avg, states } = this.analyzeHeartRate(user.heartRate);
         user.avgHeartRate = avg;
@@ -33,7 +32,10 @@ export class UserDataComponent implements OnInit {
     return +(weightKg / (heightM * heightM)).toFixed(2);
   }
 
-  private analyzeHeartRate(data: string): { avg: number; states: { minute: number; state: string }[] } {
+  private analyzeHeartRate(data: string): {
+    avg: number;
+    states: { minute: number; state: string }[];
+  } {
     const samples = data.split(';').map(Number);
     const states: { minute: number; state: string }[] = [];
 
@@ -51,7 +53,9 @@ export class UserDataComponent implements OnInit {
     return { avg: average, states };
   }
 
-  private extractFirstMinuteOfStates(states: { minute: number; state: string }[]): { minute: number; state: string }[] {
+  private extractFirstMinuteOfStates(
+    states: { minute: number; state: string }[]
+  ): { minute: number; state: string }[] {
     const firstEntries: { minute: number; state: string }[] = [];
     let lastState: string | null = null;
 

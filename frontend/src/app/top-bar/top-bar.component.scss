@@ -1,0 +1,36 @@
+.top-bar {
+  background-color: rgb(61, 61, 61);
+  width: 100%;
+  height: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.routing-button {
+  cursor: pointer;
+  color: rgb(69, 187, 255);
+  &:hover {
+    color: rgb(134, 211, 255);
+  }
+}
+
+.divider {
+  margin-right: 7px;
+  margin-left: 7px;
+}
+
+.routes {
+  display: flex;
+  margin-left: 15px;
+}
+
+.logout-button {
+  margin-right: 15px;
+}
+
+.divider {
+  color: gray;
+}

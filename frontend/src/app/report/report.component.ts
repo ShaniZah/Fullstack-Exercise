@@ -1,4 +1,4 @@
-import { Component, inject, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
@@ -18,26 +18,22 @@ import { HealthReason, HealthReportService } from '../services/health-report.ser
   templateUrl: './report.component.html',
   styleUrl: './report.component.scss'
 })
+
 export class ReportComponent {
   data: HealthReason[] = [];
 
-  level1Options: HealthReason[] = [];
-  level2Options: HealthReason[] = [];
-  level3Options: HealthReason[] = [];
-
-  selectedLevel1: HealthReason | null = null;
-  selectedLevel2: HealthReason | null = null;
-  selectedLevel3: HealthReason | null = null;
+  selectedLevels: (HealthReason | null)[] = [null];
+  levelOptions: HealthReason[][] = [[]];
 
   message = '';
 
-  private reportService = inject(HealthReportService);
+  constructor(private reportService: HealthReportService) {}
 
   ngOnInit(): void {
     this.reportService.getHealthReasons().subscribe({
       next: (res) => {
         this.data = res.values;
-        this.level1Options = this.data;
+        this.levelOptions[0] = this.data;
       },
       error: (err) => {
         console.error('Failed to load health_reasons.json:', err);
@@ -45,33 +41,39 @@ export class ReportComponent {
     });
   }
 
-  onLevel1Change() {
-    this.selectedLevel2 = null;
-    this.selectedLevel3 = null;
-    this.level2Options = this.selectedLevel1?.values || [];
-    this.level3Options = [];
-  }
+  onLevelChange(levelIndex: number): void {
+    const currentSelection = this.selectedLevels[levelIndex];
 
-  onLevel2Change() {
-    this.selectedLevel3 = null;
-    this.level3Options = this.selectedLevel2?.values || [];
-  }
-  submitReport() {
-    if (this.selectedLevel1 && this.selectedLevel2 && (this.level3Options.length === 0 || this.selectedLevel3)) {
-      this.message = 'Sending...';
-  
-      this.reportService.submitReport().subscribe({
-        next: (res) => {
-          this.message = res.message;
-        },
-        error: (err) => {
-          console.error('Error submitting report:', err);
-          this.message = 'An error occurred while sending your report.';
-        }
-      });
-    } else {
-      this.message = 'Please complete all dropdowns.';
+    // reset deeper levels (in case of re-selection)
+    this.selectedLevels = this.selectedLevels.slice(0, levelIndex + 1);
+    this.levelOptions = this.levelOptions.slice(0, levelIndex + 1);
+
+    if (currentSelection?.values?.length) {
+      this.selectedLevels.push(null);
+      this.levelOptions.push(currentSelection.values); // add next dropdown options
     }
   }
-  
+
+  submitReport(): void {
+    for (let i = 0; i < this.selectedLevels.length; i++) {
+      const selected = this.selectedLevels[i];
+      const hasChildren = !!selected?.values?.length;
+
+      if (!selected || (hasChildren && !this.selectedLevels[i + 1])) {
+        this.message = 'Please complete all dropdowns.';
+        return;
+      }
+    }
+
+    this.message = 'Sending...';
+    this.reportService.submitReport().subscribe({
+      next: (res) => {
+        this.message = res.message;
+      },
+      error: (err) => {
+        console.error('Error submitting report:', err);
+        this.message = 'An error occurred while sending your report.';
+      }
+    });
+  }
 }

@@ -23,7 +23,7 @@ import { appRoutes } from '../consts';
   styleUrl: './login.component.scss',
 })
 export class LoginComponent {
-  constructor(private router: Router, private authService : AuthService) {}
+  constructor(private router: Router, private authService: AuthService) {}
 
   username: string = '';
   password: string = '';
@@ -39,13 +39,12 @@ export class LoginComponent {
       password: this.password,
     };
 
-
     this.authService.login(loginInfo).subscribe({
       next: () => {
         this.errorMessage = '';
         clearInterval(this.lockTimer);
         this.locked = false;
-        this.router.navigate([`/${appRoutes.dashboard}`]);
+        this.router.navigate([appRoutes.root, appRoutes.dashboard]);
       },
       error: (error) => {
         if (error.status === 401) {
@@ -75,5 +74,4 @@ export class LoginComponent {
       }
     }, 1000);
   }
-
 }
