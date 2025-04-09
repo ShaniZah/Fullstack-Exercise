@@ -5,10 +5,10 @@ import { catchError, map, of } from 'rxjs';
 import { appRoutes } from '../consts';
 
 export const authGuard: CanActivateFn = () => {
-  const auth = inject(AuthService);
+  const authService = inject(AuthService);
   const router = inject(Router);
 
-  return auth.validateToken().pipe(
+  return authService.validateToken().pipe(
     map((isValid) => {
       if (isValid) {
         return true;

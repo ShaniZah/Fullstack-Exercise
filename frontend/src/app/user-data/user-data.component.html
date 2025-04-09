@@ -1,4 +1,5 @@
-<mat-accordion *ngIf="users.length">
+@if (users.length) {
+  <mat-accordion>
     <mat-expansion-panel *ngFor="let user of users">
       <mat-expansion-panel-header>
         <mat-panel-title>
@@ -23,3 +24,4 @@
     </mat-expansion-panel>
   </mat-accordion>
   
+}
