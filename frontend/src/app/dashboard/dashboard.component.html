@@ -2,28 +2,22 @@
     <span>Dashboard</span>
     <span class="spacer"></span>
     <button mat-button (click)="onLogout()">Logout</button>
-</mat-toolbar>
-
-<mat-accordion *ngIf="users.length">
-    <mat-expansion-panel *ngFor="let user of users">
-        <mat-expansion-panel-header>
-            <mat-panel-title>{{ user.firstName }} {{ user.lastName }}</mat-panel-title>
-            <mat-panel-description>ID: {{ user.id }} | Age: {{ user.age }}</mat-panel-description>
-        </mat-expansion-panel-header>
-        <div>
-            <p><b>Height:</b> {{ user.height }} cm</p>
-            <p><b>Weight:</b> {{ user.weight }} kg</p>
-            <p><b>BMI:</b> {{ user.bmi }}</p>
-            <p><b>Heart Rate Info:</b></p>
-            <ul>
-                <li *ngFor="let status of user.heartRateStatuses">Minute {{ status.minute }} - {{ status.state }}</li>
-            </ul>
-            <p><b>Average Heart Rate:</b> {{ user.avgHeartRate }}</p>
-        </div>
-    </mat-expansion-panel>
-</mat-accordion>
-<div class="report-upload-container">
-    <app-report></app-report>
-    <app-upload></app-upload>
+  </mat-toolbar>
+  
+  <div class="dashboard-container">
+    <div class="section-card">
+      <h2>User Information</h2>
+      <app-user-data></app-user-data>
+    </div>
+  
+    <div class="section-card">
+      <h2>Report Health Issue</h2>
+      <app-report></app-report>
+    </div>
+  
+    <div class="section-card">
+      <h2>Upload CSV File</h2>
+      <app-upload></app-upload>
+    </div>
   </div>
   

@@ -1,0 +1,25 @@
+<mat-accordion *ngIf="users.length">
+    <mat-expansion-panel *ngFor="let user of users">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          {{ user.firstName }} {{ user.lastName }}
+        </mat-panel-title>
+        <mat-panel-description>
+          ID: {{ user.id }} | Age: {{ user.age }}
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <div>
+        <p><b>Height:</b> {{ user.height }} cm</p>
+        <p><b>Weight:</b> {{ user.weight }} kg</p>
+        <p><b>BMI:</b> {{ user.bmi }}</p>
+        <p><b>Heart Rate Info:</b></p>
+        <ul>
+          <li *ngFor="let status of user.heartRateStatuses">
+            Minute {{ status.minute }} - {{ status.state }}
+          </li>
+        </ul>
+        <p><b>Average Heart Rate:</b> {{ user.avgHeartRate }}</p>
+      </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+  
