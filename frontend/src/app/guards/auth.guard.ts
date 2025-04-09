@@ -1,8 +1,8 @@
-// src/app/guards/auth.guard.ts
 import { inject } from '@angular/core';
 import { CanActivateFn, Router } from '@angular/router';
 import { AuthService } from '../services/auth.service';
 import { catchError, map, of } from 'rxjs';
+import { appRoutes } from '../consts';
 
 export const authGuard: CanActivateFn = () => {
   const auth = inject(AuthService);
@@ -13,12 +13,12 @@ export const authGuard: CanActivateFn = () => {
       if (isValid) {
         return true;
       } else {
-        router.navigate(['/login']);
+        router.navigate([`/${appRoutes.login}`]);
         return false;
       }
     }),
     catchError(() => {
-      router.navigate(['/login']);
+      router.navigate([`/${appRoutes.login}`]);
       return of(false);
     })
   );

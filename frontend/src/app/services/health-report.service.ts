@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { environment } from '../../environments/environment.development';
+import { APIs } from '../consts';
 
 export interface HealthReason {
   name: string;
@@ -19,7 +19,7 @@ export class HealthReportService {
   }
 
   submitReport(): Observable<{ message: string }> {
-    return this.http.post<{ message: string }>(`${environment.url}/report`, {}, {withCredentials:true}); 
+    return this.http.post<{ message: string }>(APIs.sendReport, {}, {withCredentials:true}); 
   }
   
 }

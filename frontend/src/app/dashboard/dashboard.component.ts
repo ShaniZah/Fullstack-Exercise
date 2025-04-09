@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { MatButtonModule } from '@angular/material/button';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -8,6 +8,7 @@ import { UploadComponent } from "../upload/upload.component";
 import { AuthService } from '../services/auth.service';
 import { Router } from '@angular/router';
 import { UserDataComponent } from "../user-data/user-data.component";
+import { appRoutes } from '../consts';
 
 @Component({
   selector: 'app-dashboard',
@@ -21,7 +22,7 @@ export class DashboardComponent {
 
   onLogout() {
     this.authService.logout().subscribe({
-      next: () => this.router.navigate(['/login']),
+      next: () => this.router.navigate([`/${appRoutes.login}`]),
       error: (err) => console.error('Logout failed', err)
     });
   }

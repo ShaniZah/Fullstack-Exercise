@@ -7,6 +7,8 @@ import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { MatButton } from '@angular/material/button';
 import { LoginRequest, AuthService } from '../services/auth.service';
+import { appRoutes } from '../consts';
+
 @Component({
   selector: 'app-login',
   imports: [
@@ -26,7 +28,6 @@ export class LoginComponent {
   username: string = '';
   password: string = '';
   errorMessage: string = '';
-  private failedAttempts = 0;
   private lockTimer: any;
   locked = false;
   countdown = 0;
@@ -44,7 +45,7 @@ export class LoginComponent {
         this.errorMessage = '';
         clearInterval(this.lockTimer);
         this.locked = false;
-        this.router.navigate(['/dashboard']);
+        this.router.navigate([`/${appRoutes.dashboard}`]);
       },
       error: (error) => {
         if (error.status === 401) {

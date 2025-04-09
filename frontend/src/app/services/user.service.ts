@@ -1,8 +1,7 @@
 import { Injectable } from '@angular/core';
-import { HttpClient, HttpHeaders } from '@angular/common/http';
-import { Observable, tap } from 'rxjs';
-import { environment } from '../../environments/environment.development';
-import { tokenGetter } from '../app.config';
+import { HttpClient } from '@angular/common/http';
+import { Observable } from 'rxjs';
+import { APIs } from '../consts';
 
 export interface User {
   id: string;
@@ -24,6 +23,6 @@ export class UserService {
   constructor(private http: HttpClient) {}
 
   getUsers(): Observable<User[]> {
-    return this.http.get<User[]>(`${environment.url}/data/GetAll`, {withCredentials:true});
+    return this.http.get<User[]>(APIs.getData, {withCredentials:true});
   }
 }

@@ -1,5 +1,4 @@
-// user-data.component.ts
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { User, UserService } from '../services/user.service';

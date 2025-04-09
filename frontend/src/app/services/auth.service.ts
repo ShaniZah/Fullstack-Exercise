@@ -1,7 +1,7 @@
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { catchError, map, Observable, of, throwError } from 'rxjs';
-import { environment } from '../../environments/environment.development';
+import { catchError, map, Observable, of } from 'rxjs';
+import { APIs } from '../consts';
 
 export interface LoginRequest {
   username: string;
@@ -15,18 +15,18 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(loginInfo: LoginRequest) {
-    return this.http.post<LoginResponse>(`${environment.url}/Auth/Login`, loginInfo, {withCredentials:true});
+    return this.http.post<LoginResponse>(APIs.login, loginInfo, {withCredentials:true});
   }
 
   logout(): Observable<any> {
-    return this.http.post(`${environment.url}/Auth/Logout`, {}, {
+    return this.http.post(APIs.logout, {}, {
       withCredentials: true
     });
   }
 
   validateToken(): Observable<boolean> {
     return this.http.get<{ valid: boolean }>(
-      `${environment.url}/Auth/ValidateToken`,
+      APIs.validateToken,
       { withCredentials: true }
     ).pipe(
       map(() => true),
