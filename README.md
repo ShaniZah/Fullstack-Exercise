@@ -6,7 +6,7 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 - [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download) (or higher)
 - [Node.js v22.13.0](https://nodejs.org/en/download)
-- Make sure the port 7200 is available 
+- Make sure the ports 4200 and 7200 are available 
 
 ## How to Run:
 
@@ -15,6 +15,14 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
     2. dotnet run --launch-profile https
     3. go to link https://localhost:7200
     4. a warning will show, click 'advanced' -> 'continue to site'
+
+- To run in development mode:
+    1. run server as detailed above
+    in root folder run the following commands: 
+    2. cd frontend
+    3. npm install
+    4. npm start
+    5. go to link http://localhost:4200
 
 ## Backend
 
