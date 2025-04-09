@@ -40,36 +40,39 @@ export class LoginComponent {
 
 
     this.authService.login(loginInfo).subscribe({
-      next: (response) => {
+      next: () => {
         this.errorMessage = '';
-        this.failedAttempts = 0;
         clearInterval(this.lockTimer);
-        //this.authService.updateJwtToken(response.token);
+        this.locked = false;
         this.router.navigate(['/dashboard']);
       },
-      error: () => {
-        this.failedAttempts++;
-        if (this.failedAttempts >= 3) {
-          this.locked = true;
-          this.countdown = 60;
-          this.errorMessage = `Locked. Try again in ${this.countdown}s.`;
-
-          this.lockTimer = setInterval(() => {
-            this.countdown--;
-            if (this.countdown <= 0) {
-              clearInterval(this.lockTimer);
-              this.failedAttempts = 0;
-              this.locked = false;
-              this.errorMessage = '';
-            } else {
-              this.errorMessage = `Locked. Try again in ${this.countdown}s.`;
-            }
-          }, 1000);
+      error: (error) => {
+        if (error.status === 401) {
+          this.errorMessage = 'Invalid username or password';
+        } else if (error.status === 423) {
+          this.errorMessage = `Too many attempts. Try again in 1 minute`;
         } else {
-          this.errorMessage = `Invalid credentials (${this.failedAttempts}/3)`;
+          this.errorMessage = 'Something went wrong. Please try again later.';
         }
       },
     });
+  }
+
+  startLockoutTimer(seconds: number) {
+    this.locked = true;
+    this.countdown = seconds;
+    this.errorMessage = `Too many attempts. Try again in ${this.countdown}s`;
+
+    this.lockTimer = setInterval(() => {
+      this.countdown--;
+      if (this.countdown <= 0) {
+        clearInterval(this.lockTimer);
+        this.locked = false;
+        this.errorMessage = '';
+      } else {
+        this.errorMessage = `Too many attempts. Try again in ${this.countdown}s`;
+      }
+    }, 1000);
   }
 
 }

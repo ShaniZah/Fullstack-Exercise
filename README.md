@@ -15,12 +15,12 @@ Backend folder
         |--- index.html
         |--- chunks
 
-![architecture diagram](/src/assets/architecture%20diagram.jpg)
+![architecture diagram](/frontend/src/assets/architecture%20diagram.jpg)
 
 ///TODO explain where the client source code is and how to bundle and serve as part of the application
 -frontend
 -npmi
 -cli
--build prod
+-ng build
 -copy dist folder content in browser to wwwroot
 

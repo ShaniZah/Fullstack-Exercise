@@ -1,0 +1,8 @@
+# VS and build files
+.vs/
+bin/
+obj/
+*.user
+*.suo
+*.pdb
+uploads/

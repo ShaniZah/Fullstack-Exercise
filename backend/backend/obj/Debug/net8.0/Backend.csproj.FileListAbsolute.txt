@@ -95,3 +95,4 @@ C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend
 C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\bin\Debug\net8.0\Microsoft.AspNetCore.SpaServices.dll
 C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\obj\Debug\net8.0\spa.proxy.json
 C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\bin\Debug\net8.0\Backend.staticwebassets.runtime.json
+C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\bin\Debug\net8.0\uploads\running_history.json

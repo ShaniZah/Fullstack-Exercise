@@ -30,7 +30,7 @@ export class AuthService {
       { withCredentials: true }
     ).pipe(
       map(() => true),
-      catchError(() => of(false)) //  401/403/..., see as invalid
+      catchError(() => of(false)) 
     );
   }
 }
