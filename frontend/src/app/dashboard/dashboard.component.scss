@@ -1,3 +1,5 @@
+@use "../../custom-colors.scss" as colors;
+
 mat-toolbar {
   display: flex;
   justify-content: space-between;
@@ -25,4 +27,8 @@ mat-toolbar {
 
 .dashboard-container {
   padding: 20px;
+}
+
+.dashboard-header {
+  color: colors.$gray-text;
 }

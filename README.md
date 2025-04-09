@@ -25,7 +25,7 @@ Backend folder
 
 - Open a CMD in the root folder and run the following commands:
     1. cd backend
-    2. dotnet run
+    2. dotnet run --launch-profile https
 
 ### Frontend (Angular)
 

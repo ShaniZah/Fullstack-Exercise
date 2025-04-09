@@ -1,6 +1,6 @@
 namespace Backend.Services
 {
-  public class TokenBlacklistService
+  public class TokenBlacklistService : ITokenBlacklistService
   {
     private readonly string filePath = Path.Combine(Directory.GetCurrentDirectory(), "blacklisted_tokens.txt");
     private readonly HashSet<string> cache = new();

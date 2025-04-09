@@ -1,73 +1,66 @@
+using System.Globalization;
 using System.Text.Json;
+using CsvHelper;
+using CsvHelper.Configuration;
 
 namespace Backend.Services
 {
-  public class FileProcessingService : IFileProcessingService
-  {
-    private readonly IWebHostEnvironment _env;
-
-    public FileProcessingService(IWebHostEnvironment env)
+    public class FileProcessingService : IFileProcessingService
     {
-      _env = env;
+        private readonly IWebHostEnvironment _env;
+
+        public FileProcessingService(IWebHostEnvironment env)
+        {
+            _env = env;
+        }
+
+        public async Task<string> ProcessCsvToJsonAsync(IFormFile file)
+        {
+            // get folder path and create one if it doesnt exist
+            var uploadsFolder = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
+            if (!Directory.Exists(uploadsFolder))
+                Directory.CreateDirectory(uploadsFolder);
+
+            var filePath = Path.Combine(uploadsFolder, file.FileName);
+
+            // save uploaded file
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await file.CopyToAsync(stream);
+            }
+
+            // settings for the input csv file 
+            var config = new CsvConfiguration(CultureInfo.InvariantCulture)
+            {
+                HasHeaderRecord = true,
+                IgnoreBlankLines = true,
+                TrimOptions = TrimOptions.Trim,
+                AllowComments = true, 
+                Comment = '#',
+            };
+
+            var records = new List<dynamic>();
+
+            using (var reader = new StreamReader(filePath))
+            using (var csv = new CsvReader(reader, config))
+            {
+                await foreach (var record in csv.GetRecordsAsync<dynamic>())
+                {
+                    records.Add(record);
+                }
+            }
+
+            var jsonPath = Path.ChangeExtension(filePath, ".json");
+
+            var jsonOptions = new JsonSerializerOptions
+            {
+                WriteIndented = true,
+                PropertyNamingPolicy = JsonNamingPolicy.CamelCase
+            };
+
+            await File.WriteAllTextAsync(jsonPath, JsonSerializer.Serialize(records, jsonOptions));
+
+            return jsonPath;
+        }
     }
-
-    public async Task<string> ProcessCsvToJsonAsync(IFormFile file)
-    {
-      var uploadsFolderDirectory = Path.Combine(Directory.GetCurrentDirectory(), "uploads");
-      if (!Directory.Exists(uploadsFolderDirectory))
-        Directory.CreateDirectory(uploadsFolderDirectory);
-
-      var filePath = Path.Combine(uploadsFolderDirectory, file.FileName);
-
-      // Save the original CSV
-      using (var stream = new FileStream(filePath, FileMode.Create))
-      {
-        await file.CopyToAsync(stream);
-      }
-
-      // parse csv file content 
-      var jsonData = new List<Dictionary<string, string>>();
-      var content = await System.IO.File.ReadAllTextAsync(filePath);
-      var lines = content.Split(new[] { "\r\n", "\n", "\r" }, StringSplitOptions.RemoveEmptyEntries);
-      string[]? headers = null;
-
-      foreach (var rawLine in lines)
-      {
-        var line = rawLine.Trim();
-        if (string.IsNullOrWhiteSpace(line)) continue;
-
-        if (line.StartsWith("#"))
-        {
-          var candidate = line.Substring(1).Trim();
-          if (headers == null && (candidate.Contains("\t") || candidate.Contains(',')))
-          {
-            headers = candidate.Split(new[] { '\t', ',' });
-          }
-          continue;
-        }
-
-        if (headers == null)
-        {
-          headers = line.Split(new[] { '\t', ',' });
-          continue;
-        }
-
-        var values = line.Split(new[] { '\t', ',' });
-        var dict = new Dictionary<string, string>();
-        for (int i = 0; i < headers.Length && i < values.Length; i++)
-        {
-          dict[headers[i].Trim()] = values[i].Trim();
-        }
-
-        jsonData.Add(dict);
-      }
-
-      // Save JSON
-      var jsonFilePath = Path.Combine(uploadsFolderDirectory, Path.GetFileNameWithoutExtension(file.FileName) + ".json");
-      await System.IO.File.WriteAllTextAsync(jsonFilePath, JsonSerializer.Serialize(jsonData, new JsonSerializerOptions { WriteIndented = true }));
-
-      return jsonFilePath;
-    }
-  }
-
 }

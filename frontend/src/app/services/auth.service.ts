@@ -15,24 +15,19 @@ export class AuthService {
   constructor(private http: HttpClient) {}
 
   login(loginInfo: LoginRequest) {
-    return this.http.post<LoginResponse>(APIs.login, loginInfo, {withCredentials:true});
+    return this.http.post<LoginResponse>(APIs.login, loginInfo);
   }
 
   logout(): Observable<any> {
-    return this.http.post(APIs.logout, {}, {
-      withCredentials: true
-    });
+    return this.http.post(APIs.logout, {});
   }
 
   validateToken(): Observable<boolean> {
-    return this.http.get<{ valid: boolean }>(
-      APIs.validateToken,
-      { withCredentials: true }
-    ).pipe(
+    return this.http.get<{ valid: boolean }>(APIs.validateToken).pipe(
       map(() => true),
-      catchError(() => of(false)) 
+      catchError(() => of(false)),
     );
   }
 }
 
-type LoginResponse = { token: string };
+type LoginResponse = { message: string };

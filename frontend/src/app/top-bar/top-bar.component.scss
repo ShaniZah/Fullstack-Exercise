@@ -1,3 +1,5 @@
+@use "../../custom-colors.scss" as colors;
+
 .top-bar {
   background-color: rgb(61, 61, 61);
   width: 100%;
@@ -11,7 +13,7 @@
 
 .routing-button {
   cursor: pointer;
-  color: rgb(69, 187, 255);
+  color: colors.$blue-text;
   &:hover {
     color: rgb(134, 211, 255);
   }

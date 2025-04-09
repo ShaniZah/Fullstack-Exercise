@@ -1,9 +1,12 @@
 <mat-card class="report-card">
-  <h2>Report Health Issue</h2>
-
+  <h2 class="report-header">Report Health Issue</h2>
   <ng-container *ngFor="let options of levelOptions; let i = index">
     <mat-form-field class="full-width light-bg" appearance="outline">
-      <mat-select placeholder="choose option" [(ngModel)]="selectedLevels[i]" (selectionChange)="onLevelChange(i)">
+      <mat-select
+        placeholder="choose option"
+        [(ngModel)]="selectedLevels[i]"
+        (selectionChange)="onLevelChange(i)"
+      >
         <mat-option *ngFor="let item of options" [value]="item">
           {{ item.name }}
         </mat-option>
@@ -11,6 +14,10 @@
     </mat-form-field>
   </ng-container>
 
-  <button mat-raised-button color="accent" (click)="submitReport()">Submit</button>
-  <p *ngIf="message">{{ message }}</p>
+  <button mat-raised-button color="accent" (click)="submitReport()">
+    Submit
+  </button>
+  @if (message) {
+    <p>{{ message }}</p>
+  }
 </mat-card>

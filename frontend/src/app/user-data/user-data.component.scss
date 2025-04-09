@@ -1,0 +1,38 @@
+@use "../../custom-colors.scss" as colors;
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+}
+
+.error-container {
+  justify-items: center;
+  margin-top: 50px;
+}
+
+.error-text {
+  color: colors.$error;
+}
+
+.user-data-field {
+  color: colors.$light-gray-text;
+}
+
+.panel-header {
+  color: colors.$gray-text;
+}
+
+.heart-rate-statuses-container {
+  height: 100px;
+  scroll-behavior: auto;
+}
+
+.show-more,
+.show-less {
+  color: colors.$blue-text;
+  cursor: pointer;
+  &:hover {
+    color: rgb(28, 157, 231);
+  }
+}

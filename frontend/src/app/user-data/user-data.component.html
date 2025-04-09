@@ -1,29 +1,61 @@
-@if (users.length) {
-<mat-accordion>
-  @for(user of users; track user.id){
-  <mat-expansion-panel>
-    <mat-expansion-panel-header>
-      <mat-panel-title>
-        {{ user.firstName }} {{ user.lastName }}
-      </mat-panel-title>
-      <mat-panel-description>
-        ID: {{ user.id }} | Age: {{ user.age }}
-      </mat-panel-description>
-    </mat-expansion-panel-header>
-    <div>
-      <p><b>Height:</b> {{ user.height }} cm</p>
-      <p><b>Weight:</b> {{ user.weight }} kg</p>
-      <p><b>BMI:</b> {{ user.bmi }}</p>
-      <p><b>Heart Rate Info:</b></p>
-      <ul>
-        <li *ngFor="let status of user.heartRateStatuses">
-          Minute {{ status.minute }} - {{ status.state }}
-        </li>
-      </ul>
-      <p><b>Average Heart Rate:</b> {{ user.avgHeartRate }}</p>
-    </div>
-  </mat-expansion-panel>
-  }
-</mat-accordion>
+@if (!error) {
+  @if (users.length) {
+    <mat-accordion>
+      @for (user of users; track user.id) {
+        <mat-expansion-panel (closed)="showMore = false">
+          <mat-expansion-panel-header>
+            <mat-panel-title class="panel-header">
+              {{ user.firstName }} {{ user.lastName }}
+            </mat-panel-title>
+            <mat-panel-description>
+              ID: {{ user.id }} | Age: {{ user.age }}
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <div>
+            <p><b class="user-data-field">Height:</b> {{ user.height }} cm</p>
+            <p><b class="user-data-field">Weight:</b> {{ user.weight }} kg</p>
+            <p><b class="user-data-field">BMI:</b> {{ user.bmi }}</p>
 
+            <p><b class="user-data-field">Heart Rate Info:</b></p>
+
+            <ul>
+              @for (
+                status of user.heartRateStatuses;
+                let index = $index;
+                track status.minute
+              ) {
+                @if (index < 10 || (index > 10 && showMore)) {
+                  <li>Minute {{ status.minute }} - {{ status.state }}</li>
+                }
+                @if (index === 10 && !showMore) {
+                  <div class="show-more" (click)="showMore = !showMore">show more...</div>
+                }
+                @if (
+                  index > 10 &&
+                  index + 1 === user.heartRateStatuses?.length &&
+                  showMore
+                ) {
+                  <div class="show-less" (click)="showMore = !showMore">show less...</div>
+                }
+              }
+            </ul>
+
+            <p>
+              <b class="user-data-field">Average Heart Rate:</b>
+              {{ user.avgHeartRate }}
+            </p>
+          </div>
+        </mat-expansion-panel>
+      }
+    </mat-accordion>
+  } @else {
+    <div class="loader-container">
+      <mat-spinner color="primary"></mat-spinner>
+    </div>
+  }
+} @else {
+  <div class="error-container">
+    <h3 class="error-text">Page couldn't not be loaded</h3>
+    <div>Please try again later</div>
+  </div>
 }

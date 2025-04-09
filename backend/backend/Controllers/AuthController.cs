@@ -24,7 +24,7 @@ namespace Backend.Controllers
 
         // authenticate user and return a jwt in a cookie 
         [HttpPost("Login")]
-        public IActionResult Login([FromBody] LoginRequest request, [FromServices] LoginAttemptService loginService)
+        public IActionResult Login([FromBody] LoginRequest request, [FromServices] ILoginAttemptService loginService)
         {
             var username = request.Username;
             if (loginService.IsLockedOut(username)){
@@ -68,7 +68,7 @@ namespace Backend.Controllers
 
         // delete the cookie and blacklist the tokens sessionID
         [HttpPost("Logout")]
-        public IActionResult Logout([FromServices] TokenBlacklistService blacklist)
+        public IActionResult Logout([FromServices] ITokenBlacklistService blacklist)
         {
 
             //get the sessionId from the current token's claims

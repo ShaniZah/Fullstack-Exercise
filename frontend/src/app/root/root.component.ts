@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
-import { UserService } from '../services/user.service';
-import { appRoutes, RouteKeys } from '../consts';
-import { AuthService } from '../services/auth.service';
+import { appRoutes } from '../consts';
 import { TopBarComponent } from '../top-bar/top-bar.component';
 
 @Component({
@@ -13,6 +11,7 @@ import { TopBarComponent } from '../top-bar/top-bar.component';
 })
 export class RootComponent implements OnInit {
   constructor(private route: Router) {}
+  
   ngOnInit(): void {
     this.route.navigate([appRoutes.root, appRoutes.dashboard]);
   }

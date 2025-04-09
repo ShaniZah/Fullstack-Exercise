@@ -1,24 +1,26 @@
-import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
-import { MatButtonModule } from '@angular/material/button';
-import { HealthReason, HealthReportService } from '../services/health-report.service';
+import { HealthReportService } from '../services/health-report.service';
+import { HealthReason } from './reports.types';
 
 @Component({
   selector: 'app-report',
-  imports: [CommonModule,
+  imports: [
+    CommonModule,
     FormsModule,
     MatCardModule,
     MatFormFieldModule,
     MatSelectModule,
-    MatButtonModule],
+    MatButtonModule,
+  ],
   templateUrl: './report.component.html',
-  styleUrl: './report.component.scss'
+  styleUrl: './report.component.scss',
 })
-
 export class ReportComponent {
   data: HealthReason[] = [];
 
@@ -26,6 +28,7 @@ export class ReportComponent {
   levelOptions: HealthReason[][] = [[]];
 
   message = '';
+  submitting = false;
 
   constructor(private reportService: HealthReportService) {}
 
@@ -37,7 +40,7 @@ export class ReportComponent {
       },
       error: (err) => {
         console.error('Failed to load health_reasons.json:', err);
-      }
+      },
     });
   }
 
@@ -64,16 +67,19 @@ export class ReportComponent {
         return;
       }
     }
+    this.submitting = true;
 
     this.message = 'Sending...';
     this.reportService.submitReport().subscribe({
       next: (res) => {
+        this.submitting = false;
         this.message = res.message;
       },
       error: (err) => {
         console.error('Error submitting report:', err);
+        this.submitting = false;
         this.message = 'An error occurred while sending your report.';
-      }
+      },
     });
   }
 }
