@@ -2,19 +2,6 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.1.
 
-# Project Structure 
-
-Frontend folder
-Backend folder
-README.md
-
-Frontend folder
-    |---source code
-Backend folder
-    |---wwwroot
-        |--- index.html
-        |--- chunks
-
 ### Pre-requisites 
 
 - [.NET SDK 8.0](https://dotnet.microsoft.com/en-us/download) (or higher)
@@ -24,7 +11,7 @@ Backend folder
 ### Backend (C#)
 
 - Open a CMD in the root folder and run the following commands:
-    1. cd backend
+    1. cd backend/backend
     2. dotnet run --launch-profile https
 
 ### Frontend (Angular)
@@ -43,6 +30,5 @@ Backend folder
 
 ## Security 
 
-All client-server communication is done over HTTPS, using a self-signed TLS certificate.
 After a successful login, the backend generates a JWT token and stores it inside an HttpOnly Secure cookie.
 When a user logs out, the token's session ID is stored in a blacklist to prevent reuse, even if the token hasn't expired yet.

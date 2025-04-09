@@ -77,6 +77,13 @@ builder.Services.AddAuthentication(options =>
 	};
 });
 
+builder.WebHost.ConfigureKestrel(serverOptions =>
+{
+	serverOptions.ListenAnyIP(7200, listenOptions =>
+	{
+		listenOptions.UseHttps("localhost.pfx", "yourPassword123");
+	});
+});
 
 var app = builder.Build();
 
