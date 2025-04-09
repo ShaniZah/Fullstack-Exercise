@@ -26,11 +26,12 @@ This project was generated using [Angular CLI](https://github.com/angular/angula
 
 ## Backend
 
-Below is a diagram of the backend architecture
+Below is a diagram of the client server architecture security-wise
 
 ![architecture_diagram](/frontend/src/assets/architecture_diagram.jpg)
 
 ## Security 
 
-A self-signed certificate authority was generated and used to enable HTTPS for secure backend communication. After a successful login, the backend generates a JWT token and stores it inside an HttpOnly Secure cookie.
-When a user logs out, the token's session ID is stored in a blacklist to prevent reuse, even if the token hasn't expired yet.
+- A self-signed certificate authority was generated and used to enable HTTPS for secure backend communication. 
+- After a successful login, the backend generates a JWT token and stores it inside an HttpOnly Secure cookie.
+- When a user logs out, the token's session ID is stored in a blacklist to prevent reuse, even if the token hasn't expired yet.
