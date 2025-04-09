@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\assets\\architecture diagram.jpg",
+      "PackagePath": "staticwebassets\\assets\\architecture diagram.jpg"
+    },
+    {
       "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\assets\\health_reasons.json",
       "PackagePath": "staticwebassets\\assets\\health_reasons.json"
     },
@@ -9,12 +13,12 @@
       "PackagePath": "staticwebassets\\chunk-ANJX3GAW.js"
     },
     {
-      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-CCOELB5H.js",
-      "PackagePath": "staticwebassets\\chunk-CCOELB5H.js"
+      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-NDPB43PI.js",
+      "PackagePath": "staticwebassets\\chunk-NDPB43PI.js"
     },
     {
-      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-X6AA7QQF.js",
-      "PackagePath": "staticwebassets\\chunk-X6AA7QQF.js"
+      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-S6Q6T2OV.js",
+      "PackagePath": "staticwebassets\\chunk-S6Q6T2OV.js"
     },
     {
       "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\chunk-ZWUYHGBN.js",
@@ -29,8 +33,8 @@
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\main-PBHU4UUS.js",
-      "PackagePath": "staticwebassets\\main-PBHU4UUS.js"
+      "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\main-KKRTJDB2.js",
+      "PackagePath": "staticwebassets\\main-KKRTJDB2.js"
     },
     {
       "Id": "C:\\Users\\shani\\Desktop\\College\\Web Dev Projext\\FullsatckExercise\\backend\\Backend\\wwwroot\\polyfills-FFHMD2TL.js",

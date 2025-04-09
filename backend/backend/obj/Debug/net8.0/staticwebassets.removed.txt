@@ -1,0 +1,3 @@
+C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\wwwroot\chunk-CCOELB5H.js
+C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\wwwroot\chunk-X6AA7QQF.js
+C:\Users\shani\Desktop\College\Web Dev Projext\FullsatckExercise\backend\Backend\wwwroot\main-PBHU4UUS.js
