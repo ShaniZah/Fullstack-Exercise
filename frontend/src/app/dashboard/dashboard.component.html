@@ -1,0 +1,22 @@
+<mat-toolbar color="primary">
+    <span>Dashboard</span>
+    <span class="spacer"></span>
+    <button mat-button (click)="onLogout()">Logout</button>
+  </mat-toolbar>
+  
+  <div class="dashboard-container">
+    <div class="section-card">
+      <h2>User Information</h2>
+      <app-user-data></app-user-data>
+    </div>
+  
+    <div class="section-card">
+      <app-report></app-report>
+    </div>
+  
+    <div class="section-card">
+      
+      <app-upload></app-upload>
+    </div>
+  </div>
+  
